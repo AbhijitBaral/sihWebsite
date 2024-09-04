@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <img src ="university-education-logo-design-template-free-vector.jpg" alt="University logo" class="logo">
+            <h1>Welcome to Sambalpur Polytechnic</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Empowering Students for the Future</h2>
+                <p>Join us in our mission to provide quality education and research opportunities.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </section>
+    </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sambalpur Polytechnic . All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot toggle button -->
+    <div id="chatbot-toggle">
+        <button onclick="toggleChatbot()">Chat with us</button>
+    </div>
+
+    <!-- Chatbot iframe container -->
+    <div id="chatbot-container">
+        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/bbe2adcf-0c7a-4760-90a1-f3856f615045"></iframe>
+    </div>
+
+    <script>
+        function toggleChatbot() {
+            const chatbotContainer = document.getElementById('chatbot-container');
+            chatbotContainer.style.display = chatbotContainer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+
